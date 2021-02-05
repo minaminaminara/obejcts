@@ -1,0 +1,50 @@
+
+buildscript {
+    ext {
+        springBootVersion = '2.1.6.RELEASE'
+    }
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+plugins {
+    id 'java'
+    id 'idea'
+    id 'war'
+}
+
+repositories {
+    //jcenter()
+    maven { url "http://nexus.abouthere.kr/content/groups/public" }
+    maven {
+        url "https://plugins.gradle.org/m2/"
+    }
+}
+
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-web:2.1.6.RELEASE')
+    compile('org.springframework.boot:spring-boot-starter-json:2.1.6.RELEASE')
+    compile('org.springframework.boot:spring-boot-starter-actuator:2.1.6.RELEASE')
+    compile('org.springframework.boot:spring-boot-starter-data-jpa:2.1.6.RELEASE')
+    compile('org.springframework.boot:spring-boot-starter-data-couchbase:2.1.6.RELEASE')
+
+    compile('org.springframework.boot:spring-boot-starter-data-elasticsearch:2.1.6.RELEASE')
+
+    annotationProcessor('org.projectlombok:lombok:1.18.6')
+    compileOnly('org.projectlombok:lombok:1.18.6')
+    testCompile('org.projectlombok:lombok:1.18.6')
+
+    testCompile('org.springframework.boot:spring-boot-starter-test:2.1.6.RELEASE')
+    testCompile('org.springframework.restdocs:spring-restdocs-mockmvc:2.0.3.RELEASE')
+    compile('mysql:mysql-connector-java:5.1.40')
+
+    compile('io.springfox:springfox-swagger2:2.9.2')
+    compile('io.springfox:springfox-swagger-ui:2.9.2')
+
+}
