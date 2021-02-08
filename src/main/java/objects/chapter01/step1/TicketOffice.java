@@ -1,4 +1,4 @@
-package objects.chapter01;
+package objects.chapter01.step1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -9,7 +9,7 @@ public class TicketOffice {
 
     private List<Ticket> tickets = new ArrayList<>();
 
-    public TicketOffice(Long amount, Ticket ... tickets) {
+    public TicketOffice(Long amount, Ticket... tickets) {
         this.amount = amount;
         this.tickets.addAll(Arrays.asList(tickets));
     }

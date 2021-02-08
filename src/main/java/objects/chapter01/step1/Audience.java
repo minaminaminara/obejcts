@@ -1,4 +1,4 @@
-package objects.chapter01;
+package objects.chapter01.step1;
 
 public class Audience {
     private Bag bag;

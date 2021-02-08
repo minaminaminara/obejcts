@@ -1,6 +1,4 @@
-package objects.chapter01;
-
-import java.time.LocalDateTime;
+package objects.chapter01.step1;
 
 public class Ticket {
     private Long fee;
