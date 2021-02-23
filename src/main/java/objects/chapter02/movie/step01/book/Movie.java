@@ -1,4 +1,4 @@
-package objects.chapter02.movie.step01;
+package objects.chapter02.movie.step01.book;
 
 
 import objects.chapter02.money.Money;

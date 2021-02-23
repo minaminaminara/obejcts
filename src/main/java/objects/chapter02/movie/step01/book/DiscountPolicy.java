@@ -1,15 +1,15 @@
-package objects.chapter02.movie.step01;
+package objects.chapter02.movie.step01.book;
 
 import objects.chapter02.money.Money;
 
-import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public abstract class DiscountPolicy {
     private List<DiscountCondition> conditions = new ArrayList<>();
 
-    public DiscountPolicy(DiscountCondition ... conditions) {
+    public DiscountPolicy(DiscountCondition... conditions) {
         this.conditions = Arrays.asList(conditions);
     }
 

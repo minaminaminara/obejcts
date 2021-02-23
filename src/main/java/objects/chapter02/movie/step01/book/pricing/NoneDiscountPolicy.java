@@ -1,9 +1,8 @@
-package objects.chapter02.movie.step01.pricing;
+package objects.chapter02.movie.step01.book.pricing;
 
 import objects.chapter02.money.Money;
-import objects.chapter02.movie.step01.DiscountCondition;
-import objects.chapter02.movie.step01.DiscountPolicy;
-import objects.chapter02.movie.step01.Screening;
+import objects.chapter02.movie.step01.book.DiscountPolicy;
+import objects.chapter02.movie.step01.book.Screening;
 
 public class NoneDiscountPolicy extends DiscountPolicy {
 
